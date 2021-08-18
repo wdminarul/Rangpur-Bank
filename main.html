@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangpur bank</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css link  -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <section class="content container">
+      <button id="light"class="btn-small btn-light rounded"></button>
+      <button id="dark"class="btn-small btn-dark rounded"></button>
+    <h1 class=" text-primary text-center ">Let's get some money!</h1>
+    <div class="container">
+        <div class="row ">
+          <div class="col border m-3 bg-success p-3 text-white rounded">
+            <h3 class="">Deposite</h3>
+            <h4>$<span id="total-deposit">00</span> </h4>
+          </div>
+          <div class="col border m-3 bg-warning p-3 text-white rounded">
+            <h3 class="">Withdraw</h3>
+            <h4>$<span id="total-withdraw">00</span> </h4>
+          </div>
+          <div class="col border m-3 bg-danger p-3 text-white rounded">
+            <h3 class="">Balance</h3>
+            <h4>$ <span id="balance">2500</span></h4>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- deposite withdraw -->
+<section>
+    <div class="container">
+        <div class="row ">
+          <div class="col border m-3 bg-success p-5 text-white rounded">
+            <h1 class="">Deposit</h1>
+            <div>
+                <input class="w-100 py-2" type="number" name="" id="depo-num" placeholder="$ Deposit please your wnat of money"><br><br>
+                <button id="deposit"class="btn-danger rounded px-3 py-1">Diposit</button>
+            </div>
+          </div>
+          <div class="col border m-3 bg-warning p-5 text-white rounded">
+            <h1 class="">Withdraw</h1>
+            <div>
+                <input class="w-100 py-2" type="number" name="" id="with-num" placeholder="$ withdraw please your wnat of money"><br><br>
+                <button id="withdraw"class="btn-large btn-secondary rounded px-3 py-1">Withdraw</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+    <!-- js link  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
